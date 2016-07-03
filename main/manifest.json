@@ -1,0 +1,27 @@
+{
+  "name": "u ka ga",
+  "version": "0.0.0",
+  "manifest_version": 2,
+  "description": "",
+  "icons": {},
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "jquery-2.2.3.min.js",
+        "interrupt_tab.js",
+        "jquery-ui-1.11.4.custom/jquery-ui.min.js"
+      ],
+      "css":[]
+    }
+  ],
+  "permissions": []
+}
