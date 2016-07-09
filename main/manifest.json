@@ -23,5 +23,5 @@
       "css":[]
     }
   ],
-  "permissions": []
+  "permissions": ["tabs"]
 }
