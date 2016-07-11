@@ -1,6 +1,6 @@
 {
   "name": "u ka ga",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "manifest_version": 2,
   "description": "",
   "icons": {},
@@ -23,5 +23,6 @@
       "css":[]
     }
   ],
-  "permissions": ["tabs"]
+  "permissions": ["tabs", "identity"],
+  "content_security_policy": "script-src 'self' http://localhost https://apis.google.com https://www.googleapis.com; object-src 'self'"
 }

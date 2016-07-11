@@ -10,8 +10,6 @@ $(()=>{
 
     //シェルの画像をbackground.jsから取得 & 設定
     chrome.runtime.sendMessage({action: "get_shell"}, function(res){
-        console.dir(res);
-
         var shell = $("<img>")
                         .attr("src", res.shell)
                         .bind('contextmenu', create_get_context_menu_listener());
@@ -105,3 +103,16 @@ $(()=>{
         };
     }
 });
+
+
+$(()=>{
+    //gapiのロード確認
+    $("<script>")
+        .attr("src", "https://apis.google.com/js/client.js?onload=callbackFunction")
+        .appendTo("head");
+});
+
+function callbackFunction(){
+    console.log(arguments);
+    debugger;
+}

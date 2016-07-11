@@ -101,3 +101,8 @@ chrome.runtime.onMessage.addListener((req, _, sendResponse)=>{
     //非同期の場合trueにする
     return true;
 });
+
+chrome.identity.getAuthToken({'interactive':true}, function(){
+    debugger;
+    console.log(arguments);
+});
